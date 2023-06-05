@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login-register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Unbounded:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="./js/jquery.js"></script> -->
+    <script src="./js/font-awesome.min.js"></script>
+    <script src="js/login-register.js"></script>
+    <script src="./js/jquery-validate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <script
+        src='https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js'></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/alfrcr/paginathing/dist/paginathing.min.js"></script>
+
+    <title>UI</title>
+</head>
+
+<body>
+    <!-- start section form data user -->
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="box">
+                        <form class="login-user-form" id="login-user-form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2>Login</h2>
+                                </div>
+                                <!-- wrong message -->
+                                <div class="col-12 alert text-danger wrong-password-msg" role="alert">
+                                    wrong password!
+                                </div>
+                                <div class="col-12 inputBox-form-login">
+                                    <input type="text" required="required" id="userName" name="username"
+                                        autocomplete="off">
+                                    <span>Username</span>
+                                    <i></i>
+                                </div>
+                                <div class="col-12 inputBox-form-login">
+                                    <input type="password" required="required" id="password" name="password"
+                                        autocomplete="off">
+                                    <span>Password</span>
+                                    <i></i>
+                                </div>
+                                <div class="col-12 links mb-3">
+                                    <a href="./register.html">Sign Up</a>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <a href="#"><input type="submit" value="Login" class="btn-login"
+                                            data-bs-toggle="modal" data-bs-target="#confirm-loginSucces"></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <!-- warning message -->
+    <div class="col-12 d-flex justify-content-center m-4">
+        <div class="message-warning">
+            <div class="alert  d-flex align-items-center bg-white text-warning" role="alert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2 " viewBox="0 0 16 16" role="img"
+                    aria-label="Warning:">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 
+                    0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 
+                    3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <div>
+                    This account has not been registered before, you must register first
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

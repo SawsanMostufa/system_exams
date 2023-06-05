@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Unbounded:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="./js/jquery.js"></script> -->
+  <script src="./js/font-awesome.min.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/login-register.js"></script>
+  <script src="./js/jquery-validate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <script
+    src='https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js'></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/alfrcr/paginathing/dist/paginathing.min.js"></script>
+
+  <title>UI</title>
+</head>
+
+<body>
+
+  <section class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="quiz-container" id="quiz">
+            <div class="text-link-logout">
+              <a href="./index.html"><input type="button" value="Log Out" class="btn-logout px-4"></a>
+              <div  class=" px-3 py-3 justify-content-center align-items-center link-login-nav">
+                <p class="text-link-login-nav "> If you want to start the exam, you must login first, to login
+                  <a href="./index.html" class="px-2 text-primary">Click here</a></p>
+              </div>
+          
+            </div>
+            <div class="quiz-header" id="quiz-header">
+              <div class="d-flex justify-content-center mb-3">
+                <div id="starttime" class="starttime"></div>
+                <p id="time_left" class="timer"></p>
+              </div>
+              <div id="question" class=" mb-3"></div>
+
+              <ul id="answer-list">
+                <li class="answer-correct-incorrect"></li>
+              </ul>
+            </div>
+
+
+            <button id="submit">Submit</button>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

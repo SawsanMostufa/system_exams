@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/login-register.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Unbounded:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/font-awesome.min.js"></script>
+  <script src="js/login-register.js"></script>
+  <script src="./js/jquery-validate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <script
+    src='https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js'></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/alfrcr/paginathing/dist/paginathing.min.js"></script>
+
+  <title>UI</title>
+</head>
+
+<body>
+  <!-- start section form data user -->
+  <section class="mt-5 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="box">
+            <form class="register-form" id="register-user-form">
+              <div class="row">
+                <div class="col-12">
+                  <h2>Sign Up</h2>
+                </div>
+                <div class="col-12 inputBox-form-register">
+                  <input type="text" required="required" id="userName" name="username" autocomplete="off">
+                  <span>Username</span>
+                  <i></i>
+                </div>
+                <div class="col-12 inputBox-form-register mb-4">
+                  <input type="password" required="required" id="password" name="password" autocomplete="off">
+                  <span>Password</span>
+                  <i></i>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <a href="#"><input type="submit" value="Register" class="btn-register" id="btn-user-register"></a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  end section -->
+
+  <div class="modal confirm-registeredModalMessage" tabindex="-1" id="confirm-registered"
+    aria-labelledby="confirm-registeredModalMessage" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-success" id="confirm-registeredModalMessage"><i class="far fa-check-circle"></i>
+            Successfully Registered</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
